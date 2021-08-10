@@ -27,7 +27,7 @@ Why use an installer?
 - Installs and uninstalls cleanly. Just like manually upacking, this leaves no traces.
 - Automatically adds `ffmpeg` to PATH. No need to add this yourself.
 - Fast and simple.
-- Can be used for mass deployment to streamline software installation.
+- Can be used for mass deployment to streamline software installation via scripting. `> ffmpeg_installer.msi /q`
 
 Installer versioning is in format: MAJOR.MINOR.BUILD.YearMonthDay (EX: 4.4.0.20210809).
 
