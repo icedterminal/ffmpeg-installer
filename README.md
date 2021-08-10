@@ -54,4 +54,4 @@ Issues regarding ffmpeg should be directed elsewhere. Issues are open *only* for
 
 ## Smartscreen
 
-Windows 8 and later have a SmartScreen feature that blocks software that it doesn't trust. Naturally since it has never seen this software, it may warn you. The installer is safe as is the contained ffmpeg build. If you unsure, you may cross check the ffmpeg binary with gyans archives (`get-filehash`).
+Windows 8 and later have a SmartScreen feature that blocks software that it doesn't trust. Naturally since it has never seen this software, it may warn you. The installer is safe as is the contained ffmpeg build. If you unsure, you may cross check the ffmpeg binary with gyans archives (`get-filehash`). You may also view the virus total hash: https://www.virustotal.com/gui/file/9828ef2b0d86a503799948b1a9795af129f6ea8cab411b33ba5a8d604cedc360/detection
