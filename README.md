@@ -10,8 +10,9 @@ The build contained in this installer is obtained from [gyan.](https://www.gyan.
 
 gyan makes a few notes regarding these builds:
 
-> [gyan] hosts packages containing binaries of ffmpeg, ffprobe and ffplay. These are compatible with Windows 7 and above. They may work on Windows Vista but that hasn't been tested. If you're downloading ffmpeg to support features in a program such as Krita or Blender, get the release essentials build.
-> All builds are 64-bit
+> [gyan] hosts packages containing binaries of ffmpeg, ffprobe and ffplay. These are compatible with Windows 7 and above. They may work on Windows Vista but that hasn't been tested. If you're downloading ffmpeg to support features in a program such as Krita or Blender, get the release essentials build. All builds are 64-bit.
+
+Because ffmpeg is built for 64-bit only, this installer is 64-bit only. Attempting to run it on 32-bit will fail.
 
 Builds from gyan are as follows:
 
@@ -20,16 +21,16 @@ Builds from gyan are as follows:
 - _release full_ - built from latest release branch with a large set of libraries
 - _release essentials_ - built from latest release branch with commonly-used libraries
 
-This installer uses `release essentials` and is updated as needed (Security, critical bugs). I will make an effort to keep it updated every 30 days. If you need more frequent updating, please use gyan's `.7z` archives. I may add `release full` at a later date.
+This repo houses installers for *release full* and *release essentials*. I make an effort to keep it updated by checking every 30 days. If there is no updated build, there is no update here. Updates can be as needed (security, critical bugs). If you need more frequent updating, please use gyan's git `.7z` archives.
 
 Why use an installer?
 
 - Installs and uninstalls cleanly. Just like manually upacking, this leaves no traces.
 - Automatically adds `ffmpeg` to PATH. No need to add this yourself.
 - Fast and simple.
-- Can be used for mass deployment to streamline software installation via scripting. `> ffmpeg_installer.msi /q`
+- Can be used for mass deployment to streamline software installation via scripting. `> ffmpeg.msi /q`
 
-Installer versioning is in format: MAJOR.MINOR.BUILD.YearMonthDay (EX: 4.4.0.20210809).
+Installer versioning is in format: MAJOR.MINOR.BUILD.YearMonthDay (EX: 4.4.0.20210101).
 
 ## Hardware Support
 

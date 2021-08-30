@@ -1,0 +1,10 @@
+C:\Users\icedterminal\Github\ffmpeg-installer\ffmpeg_full\FFmpeg Full\bin\x64\Release\FFmpeg_Full.msi
+C:\Users\icedterminal\Github\ffmpeg-installer\ffmpeg_full\FFmpeg Full\bin\x64\Release\FFmpeg_Full.wixpdb
+obj\x64\Release\pth066487137B2FA1A08FA50B6934EED296\Product.wixobj
+obj\x64\Release\pth066487137B2FA1A08FA50B6934EED296\Features.wixobj
+obj\x64\Release\pth066487137B2FA1A08FA50B6934EED296\IISMeta.wixobj
+obj\x64\Release\pth066487137B2FA1A08FA50B6934EED296\UI.wixobj
+obj\x64\Release\pth066487137B2FA1A08FA50B6934EED296\UI-CustomDialog.wixobj
+obj\x64\Release\FFmpeg Full.wixproj.BindContentsFileListnull.txt
+obj\x64\Release\FFmpeg Full.wixproj.BindOutputsFileListnull.txt
+obj\x64\Release\FFmpeg Full.wixproj.BindBuiltOutputsFileListnull.txt

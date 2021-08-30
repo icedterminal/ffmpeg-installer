@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <?define ComponentRules="OneToOne"?>
+  <!-- SourceDir instructs IsWiX the location of the directory that contains files for this merge module -->
+  <?define SourceDir="..\Deploy"?>
+  <Module Id="FFmpeg_EssentialsMM" Language="1033" Version="1.0.0.0">
+    <Package Id="8f6f0ff7-7faa-47c0-9689-6ae56f8c9dcd" Manufacturer="FFmpeg_EssentialsMM" InstallerVersion="200" Platform="x64" />
+    <Directory Id="TARGETDIR" Name="SourceDir">
+      <Directory Id="MergeRedirectFolder">
+        <Component Id="owc08C959AF4C2883BEBDD9830863C05E9E" Guid="0a3d45eb-02e4-a772-acdb-d6fefb9f9907" Win64="yes">
+          <File Id="owf08C959AF4C2883BEBDD9830863C05E9E" Source="$(var.SourceDir)\LICENSE" KeyPath="yes" />
+        </Component>
+        <Component Id="owc6ABCE39088313A1F73B10CBF69535177" Guid="10b53fab-9964-4056-aa2d-00d7710b142e" Win64="yes">
+          <File Id="owf6ABCE39088313A1F73B10CBF69535177" Source="$(var.SourceDir)\README.txt" KeyPath="yes" />
+        </Component>
+        <Directory Id="owd00BD073775AEE2E88B74CCEE86DD7715" Name="bin">
+          <Component Id="owc821B5ECB16D00ECC4229120AAAFC34B2" Guid="b7555294-4d12-0c2b-f808-bde3580b3c4e" Win64="yes">
+            <File Id="owf821B5ECB16D00ECC4229120AAAFC34B2" Source="$(var.SourceDir)\bin\ffmpeg.exe" KeyPath="yes" />
+          </Component>
+          <Component Id="owcD7B68A8B6AB0EB7C54CB0C9068E1CE2C" Guid="6c61e16f-c04f-2d1d-6658-ad22d8e7709f" Win64="yes">
+            <File Id="owfD7B68A8B6AB0EB7C54CB0C9068E1CE2C" Source="$(var.SourceDir)\bin\ffplay.exe" KeyPath="yes" />
+          </Component>
+          <Component Id="owcA21AE33C17F53B247A615911CB552BDF" Guid="0a2b6d0a-dd43-4159-59e8-f412a7b00b90" Win64="yes">
+            <File Id="owfA21AE33C17F53B247A615911CB552BDF" Source="$(var.SourceDir)\bin\ffprobe.exe" KeyPath="yes" />
+          </Component>
+        </Directory>
+        <Directory Id="owd0DF125009D34AC89D0543485919A4284" Name="doc">
+          <Component Id="owc56AD4C391B187FB1FCE1B136F1620AAE" Guid="60f47ea1-9977-8a15-b09d-244255aeba06" Win64="yes">
+            <File Id="owf56AD4C391B187FB1FCE1B136F1620AAE" Source="$(var.SourceDir)\doc\bootstrap.min.css" KeyPath="yes" />
+          </Component>
+          <Component Id="owc86DEA0BC3D7BB685247BA51753991968" Guid="fdc2e7b7-724d-1c23-23c8-4367b40b04b8" Win64="yes">
+            <File Id="owf86DEA0BC3D7BB685247BA51753991968" Source="$(var.SourceDir)\doc\default.css" KeyPath="yes" />
+          </Component>
+          <Component Id="owcE8E370914445B946988D91DEE0846C04" Guid="ed2637dd-0b41-a35c-a34e-a53f8ac81a66" Win64="yes">
+            <File Id="owfE8E370914445B946988D91DEE0846C04" Source="$(var.SourceDir)\doc\developer.html" KeyPath="yes" />
+          </Component>
+          <Component Id="owcCAF9A11C0193B6B7E3CB16545BF39B5F" Guid="a1b223cd-b752-81d3-34e5-dcddae590d1a" Win64="yes">
+            <File Id="owfCAF9A11C0193B6B7E3CB16545BF39B5F" Source="$(var.SourceDir)\doc\faq.html" KeyPath="yes" />
+          </Component>
+          <Component Id="owc29BB3ED031CBB3840224FFF7B8BEACEA" Guid="04fc5c84-bfd6-7f52-e866-47e2035ea4e2" Win64="yes">
+            <File Id="owf29BB3ED031CBB3840224FFF7B8BEACEA" Source="$(var.SourceDir)\doc\fate.html" KeyPath="yes" />
+          </Component>
+          <Component Id="owcDDA10CB1D2BEA2170F6E1AD6E92C4334" Guid="9bdf64e4-37df-38b0-826d-15fa2d394a45" Win64="yes">
+            <File Id="owfDDA10CB1D2BEA2170F6E1AD6E92C4334" Source="$(var.SourceDir)\doc\ffmpeg.html" KeyPath="yes" />
+          </Component>
+          <Component Id="owc2AE255B6235BDD852C45D309B4C631DC" Guid="85237364-bd71-87e2-409f-7f838a45bca1" Win64="yes">
+            <File Id="owf2AE255B6235BDD852C45D309B4C631DC" Source="$(var.SourceDir)\doc\ffmpeg-all.html" KeyPath="yes" />
+          </Component>
+          <Component Id="owcE2E0860EA651363F1D05A6CDA657CE69" Guid="5533fd38-a405-810a-f7c2-95007b530fbf" Win64="yes">
+            <File Id="owfE2E0860EA651363F1D05A6CDA657CE69" Source="$(var.SourceDir)\doc\ffmpeg-bitstream-filters.html" KeyPath="yes" />
+          </Component>
+          <Component Id="owcB198E9B8BD3288F87266080BD37F897F" Guid="14cc724c-46dd-6c02-8d7d-480793b737e9" Win64="yes">
+            <File Id="owfB198E9B8BD3288F87266080BD37F897F" Source="$(var.SourceDir)\doc\ffmpeg-codecs.html" KeyPath="yes" />
+          </Component>
+          <Component Id="owc4EE38F90B0E2637266AA7CA3D409A163" Guid="546d7e9d-07b3-24bd-d52c-9fc2866d92a2" Win64="yes">
+            <File Id="owf4EE38F90B0E2637266AA7CA3D409A163" Source="$(var.SourceDir)\doc\ffmpeg-devices.html" KeyPath="yes" />
+          </Component>
+          <Component Id="owc47CF4AE5DF1FC7044F630C27F75F824B" Guid="8b9836ac-c87a-36b6-97e0-2320e9286676" Win64="yes">
+            <File Id="owf47CF4AE5DF1FC7044F630C27F75F824B" Source="$(var.SourceDir)\doc\ffmpeg-filters.html" KeyPath="yes" />
+          </Component>
+          <Component Id="owc55607D41CF0B17A2C3751B8C5A1489D7" Guid="879322c5-72ba-3b5b-0044-2562475d77fa" Win64="yes">
+            <File Id="owf55607D41CF0B17A2C3751B8C5A1489D7" Source="$(var.SourceDir)\doc\ffmpeg-formats.html" KeyPath="yes" />
+          </Component>
+          <Component Id="owcEED967D62EE2144510B785B5A6E04C6C" Guid="b4b1b748-d427-10ad-a04e-e4a6aa3eb064" Win64="yes">
+            <File Id="owfEED967D62EE2144510B785B5A6E04C6C" Source="$(var.SourceDir)\doc\ffmpeg-protocols.html" KeyPath="yes" />
+          </Component>
+          <Component Id="owcBDEFEEC7E5C0AF8CF080172496ED869B" Guid="866a3bae-e762-629a-9268-81378be0c9d8" Win64="yes">
+            <File Id="owfBDEFEEC7E5C0AF8CF080172496ED869B" Source="$(var.SourceDir)\doc\ffmpeg-resampler.html" KeyPath="yes" />
+          </Component>
+          <Component Id="owcCB0BA93E45A6C661FE47D4AF1A596904" Guid="a7c6bc9e-25ba-be98-1bf7-961ce6ed1a16" Win64="yes">
+            <File Id="owfCB0BA93E45A6C661FE47D4AF1A596904" Source="$(var.SourceDir)\doc\ffmpeg-scaler.html" KeyPath="yes" />
+          </Component>
+          <Component Id="owcF34E583856AE21807F784561D7403CAF" Guid="945dc7c6-627f-393a-ed13-6a59a490dce3" Win64="yes">
+            <File Id="owfF34E583856AE21807F784561D7403CAF" Source="$(var.SourceDir)\doc\ffmpeg-utils.html" KeyPath="yes" />
+          </Component>
+          <Component Id="owc3A28894551B07B451C7431B6D6FA9E88" Guid="9121ea1d-de27-f617-499c-bfc91ce1d23e" Win64="yes">
+            <File Id="owf3A28894551B07B451C7431B6D6FA9E88" Source="$(var.SourceDir)\doc\ffplay.html" KeyPath="yes" />
+          </Component>
+          <Component Id="owcBDC7DC34D48B70AABCDAE2D9B7C751DC" Guid="8226f13e-15ac-a9e5-6c1d-c692ff1d6273" Win64="yes">
+            <File Id="owfBDC7DC34D48B70AABCDAE2D9B7C751DC" Source="$(var.SourceDir)\doc\ffplay-all.html" KeyPath="yes" />
+          </Component>
+          <Component Id="owcB9872B1281CFBA154A755EFF21B11BAF" Guid="ac853aa2-4b46-303e-7d8d-bc850a9d1dfe" Win64="yes">
+            <File Id="owfB9872B1281CFBA154A755EFF21B11BAF" Source="$(var.SourceDir)\doc\ffprobe.html" KeyPath="yes" />
+          </Component>
+          <Component Id="owc4D7B2302CCE54DCBD64C789959E2552C" Guid="0762b84a-285c-6346-0bd0-45765fb8468e" Win64="yes">
+            <File Id="owf4D7B2302CCE54DCBD64C789959E2552C" Source="$(var.SourceDir)\doc\ffprobe-all.html" KeyPath="yes" />
+          </Component>
+          <Component Id="owc593E7C81CBFDC92FDD7B6BC023566582" Guid="61a436d3-77b0-5a30-cc1e-d0541afc04aa" Win64="yes">
+            <File Id="owf593E7C81CBFDC92FDD7B6BC023566582" Source="$(var.SourceDir)\doc\general.html" KeyPath="yes" />
+          </Component>
+          <Component Id="owc44381380E25DA23DB4197D6A5EEAF025" Guid="fa6c36e9-1ece-1f81-2d8d-c0e64a5a12d8" Win64="yes">
+            <File Id="owf44381380E25DA23DB4197D6A5EEAF025" Source="$(var.SourceDir)\doc\git-howto.html" KeyPath="yes" />
+          </Component>
+          <Component Id="owc47CFB032CC4BF3059DF30EEDDCB7EBB1" Guid="4cd8dea9-422b-ece2-3ed7-025706654412" Win64="yes">
+            <File Id="owf47CFB032CC4BF3059DF30EEDDCB7EBB1" Source="$(var.SourceDir)\doc\libavcodec.html" KeyPath="yes" />
+          </Component>
+          <Component Id="owc19DB140AB621C913D4D895F9709C1B98" Guid="ec660f5f-2ae1-427f-6d63-68e10ba1f82a" Win64="yes">
+            <File Id="owf19DB140AB621C913D4D895F9709C1B98" Source="$(var.SourceDir)\doc\libavdevice.html" KeyPath="yes" />
+          </Component>
+          <Component Id="owcCA505CC3396F6ECC5600A9363E18E872" Guid="4ef3c565-e2e1-3852-d728-d80b96142b66" Win64="yes">
+            <File Id="owfCA505CC3396F6ECC5600A9363E18E872" Source="$(var.SourceDir)\doc\libavfilter.html" KeyPath="yes" />
+          </Component>
+          <Component Id="owc2A1330243A6755CC983129714679E18D" Guid="45884a28-48e2-58f8-4537-a3f4825ca3b0" Win64="yes">
+            <File Id="owf2A1330243A6755CC983129714679E18D" Source="$(var.SourceDir)\doc\libavformat.html" KeyPath="yes" />
+          </Component>
+          <Component Id="owc5ED2AFA60254ECFDF980321DCBDE602B" Guid="166474bd-e8ee-be30-7105-f4efb5f6da9b" Win64="yes">
+            <File Id="owf5ED2AFA60254ECFDF980321DCBDE602B" Source="$(var.SourceDir)\doc\libavutil.html" KeyPath="yes" />
+          </Component>
+          <Component Id="owcFDA14257B94FC4D94560641AEFC9DFF5" Guid="85367f8b-6882-80c3-3833-bb8bb756b736" Win64="yes">
+            <File Id="owfFDA14257B94FC4D94560641AEFC9DFF5" Source="$(var.SourceDir)\doc\libswresample.html" KeyPath="yes" />
+          </Component>
+          <Component Id="owc5FA4CAC49D525BA0950C2C7547F98AE1" Guid="6c1e8283-98df-08c0-1ef1-64eb8a77145b" Win64="yes">
+            <File Id="owf5FA4CAC49D525BA0950C2C7547F98AE1" Source="$(var.SourceDir)\doc\libswscale.html" KeyPath="yes" />
+          </Component>
+          <Component Id="owc0FE58754EA93D8FEF7AD398DD6534E58" Guid="0bb87367-2ff8-abaf-e88a-011e1a9bd102" Win64="yes">
+            <File Id="owf0FE58754EA93D8FEF7AD398DD6534E58" Source="$(var.SourceDir)\doc\mailing-list-faq.html" KeyPath="yes" />
+          </Component>
+          <Component Id="owc9EC2C5244EA54F539E08929A9FFE411B" Guid="3d79b9b0-6903-22ce-72c4-3e41b3bcb055" Win64="yes">
+            <File Id="owf9EC2C5244EA54F539E08929A9FFE411B" Source="$(var.SourceDir)\doc\nut.html" KeyPath="yes" />
+          </Component>
+          <Component Id="owcBE9464447F1B856BAAF92001FD8CAE38" Guid="2f3ad145-e159-5f2e-22f6-2bc67dec17af" Win64="yes">
+            <File Id="owfBE9464447F1B856BAAF92001FD8CAE38" Source="$(var.SourceDir)\doc\platform.html" KeyPath="yes" />
+          </Component>
+          <Component Id="owcCA47BF12B1F7F02566A31CAC268B1352" Guid="1bee2353-9065-5c7f-800a-8d10745ec8c0" Win64="yes">
+            <File Id="owfCA47BF12B1F7F02566A31CAC268B1352" Source="$(var.SourceDir)\doc\style.min.css" KeyPath="yes" />
+          </Component>
+        </Directory>
+        <Directory Id="owd086C316AD54353041089371B95CFC3D9" Name="presets">
+          <Component Id="owc707AFEE8A6F7F93F6B3766886E242D89" Guid="d77eb2c5-aa45-8d10-3e0f-bfd1c36c6ab3" Win64="yes">
+            <File Id="owf707AFEE8A6F7F93F6B3766886E242D89" Source="$(var.SourceDir)\presets\libvpx-1080p.ffpreset" KeyPath="yes" />
+          </Component>
+          <Component Id="owc103CC1CAD3C414C41D30E6353BCF695F" Guid="59038795-d036-df89-d0bd-4b5412ce0f74" Win64="yes">
+            <File Id="owf103CC1CAD3C414C41D30E6353BCF695F" Source="$(var.SourceDir)\presets\libvpx-1080p50_60.ffpreset" KeyPath="yes" />
+          </Component>
+          <Component Id="owcEB9AE661F14D81A8EC6D16C18152D407" Guid="2b662c5e-4a45-6957-b4c0-659853f9c15c" Win64="yes">
+            <File Id="owfEB9AE661F14D81A8EC6D16C18152D407" Source="$(var.SourceDir)\presets\libvpx-360p.ffpreset" KeyPath="yes" />
+          </Component>
+          <Component Id="owcA8A4E2218D300550C5F7F14FE06B6985" Guid="614eb248-6358-ee78-6e1c-65b0da75c7ec" Win64="yes">
+            <File Id="owfA8A4E2218D300550C5F7F14FE06B6985" Source="$(var.SourceDir)\presets\libvpx-720p.ffpreset" KeyPath="yes" />
+          </Component>
+          <Component Id="owcCCB3245511379F8702D8239352DBE80A" Guid="ffee9383-2d76-2d69-79ea-62dcc0a408b0" Win64="yes">
+            <File Id="owfCCB3245511379F8702D8239352DBE80A" Source="$(var.SourceDir)\presets\libvpx-720p50_60.ffpreset" KeyPath="yes" />
+          </Component>
+        </Directory>
+      </Directory>
+    </Directory>
+    <ComponentGroupRef Id="Custom" />
+  </Module>
+</Wix>
