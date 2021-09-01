@@ -4,7 +4,7 @@
     <Directory Id="TARGETDIR" Name="SourceDir">
       <Directory Id="ProgramFiles64Folder">
         <Directory Id="INSTALLLOCATION" Name="FFmpeg">
-          <Merge Id="FFmpeg_EssentialsMM" SourceFile="..\FFmpeg EssentialsMM\bin\x64\Release\FFmpeg_EssentialsMM.msm" DiskId="1" Language="1033"/>
+          <Merge Id="FFmpeg_EssentialsMM" SourceFile="..\FFmpeg EssentialsMM\bin\Release\FFmpeg_EssentialsMM.msm" DiskId="1" Language="1033"/>
         </Directory>
       </Directory>
     </Directory>
