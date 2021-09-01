@@ -1,2 +1,0 @@
-C:\Users\icedterminal\Github\ffmpeg-installer\ffmpeg_full\FFmpeg Full\bin\x64\Release\FFmpeg_Full.msi
-C:\Users\icedterminal\Github\ffmpeg-installer\ffmpeg_full\FFmpeg Full\bin\x64\Release\FFmpeg_Full.wixpdb
