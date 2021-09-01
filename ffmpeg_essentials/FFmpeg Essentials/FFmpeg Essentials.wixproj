@@ -1,7 +1,7 @@
 ﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x64</Platform>
     <ProductVersion>3.7</ProductVersion>
     <ProjectGuid>{37b12ea0-3b90-4b08-a996-ccba9d7e76fe}</ProjectGuid>
     <SchemaVersion>2.0</SchemaVersion>
@@ -25,13 +25,13 @@
     <MsixTimestampUrl Condition=" '$(MsixTimestampUrl)' == '' ">
     </MsixTimestampUrl>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
     <OutputPath>bin\$(Configuration)\</OutputPath>
     <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
-    <DefineConstants>Debug;MSIProductVersion=$(MSIProductVersion)</DefineConstants>
+    <DefineConstants>Release;MSIProductVersion=$(MSIProductVersion)</DefineConstants>
     <WixVariables>WixUIBannerBmp=Resources\Banner.jpg;WixUIDialogBmp=Resources\Dialog.jpg;WixUILicenseRtf=Resources\EULA.rtf</WixVariables>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
     <OutputPath>bin\$(Configuration)\</OutputPath>
     <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
     <DefineConstants>MSIProductVersion=$(MSIProductVersion)</DefineConstants>

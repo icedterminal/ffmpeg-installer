@@ -10,7 +10,7 @@
   -->
   <Product Id="*" Name="FFmpeg Essentials" Language="1033" Version="4.4.0.20210830" Manufacturer="icedterminal" UpgradeCode="384a74ec-865a-4907-8561-9de765ee6e14">
     <Package InstallerVersion="301" Compressed="yes" InstallScope="perMachine" Manufacturer="icedtermianl" Platform="x64" />
-    <MediaTemplate EmbedCab="yes" />
+    <MediaTemplate EmbedCab="yes" CompressionLevel="high" />
     <!-- Major Upgrade Rule to disallow downgrades -->
     <MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
     <!--Common Launch Condition-->
