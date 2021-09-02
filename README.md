@@ -4,7 +4,7 @@ Ease-of-use binary executable installers for Windows 7 and up (64bit/x64).
 
 ## About
 
-`ffmpeg` is a command line multimedia framework to encode, decode, transcode, convert etc. a wide array of video formats. [Learn more here.](https://ffmpeg.org/about.html) For use refer to the [official documentation.](https://ffmpeg.org/documentation.html).
+`ffmpeg` is an open source command line multimedia framework to encode, decode, transcode, convert etc. a wide array of video formats. [Learn more here.](https://ffmpeg.org/about.html) For use refer to the [official documentation.](https://ffmpeg.org/documentation.html).
 
 The build contained in this installer is obtained from [gyan.](https://www.gyan.dev/ffmpeg/builds/) No tampering or modification has occured. Simply packaged into an installer. Rather than compile my own ffmpeg build I opted to use one that is already available.
 
