@@ -1,9 +1,7 @@
 # ffmpeg Install Package
-
 Ease-of-use binary executable installers for Windows 7 and up (64bit/x64).
 
 ## About
-
 `ffmpeg` is an open source command line multimedia framework to encode, decode, transcode, convert etc. a wide array of video formats. [Learn more here.](https://ffmpeg.org/about.html) For use refer to the [official documentation.](https://ffmpeg.org/documentation.html).
 
 The build contained in this installer is obtained from [gyan.](https://www.gyan.dev/ffmpeg/builds/) No tampering or modification has occured. Simply packaged into an installer. Rather than compile my own ffmpeg build I opted to use one that is already available.
@@ -34,7 +32,6 @@ Why use an installer?
 Installer versioning is in format: MAJOR.MINOR.BUILD.YearMonthDay (EX: 4.4.0.20210101).
 
 ## Hardware Support
-
 gyan builds are compiled with hardware acceleration enabled. Supporting the following libraries:
 
 - AMD Advanced Media Framework
@@ -51,9 +48,10 @@ gyan builds are compiled with hardware acceleration enabled. Supporting the foll
 Refer to the `README.txt` file for more information.
 
 ## Issue Reporting
-
 Issues regarding ffmpeg should be directed elsewhere. Issues are open *only* for install and uninstall process.
 
 ## Smartscreen
-
 Windows 8 and later have a SmartScreen feature that blocks software that it doesn't trust. Naturally since it has never seen this software, it may warn you. The installer is safe as is the contained ffmpeg build. If you are unsure, you may cross check the ffmpeg binary with gyans archives (`get-filehash`) or upload to virus total.
+
+## Digital Signature
+As of April 2022, the installers are self-signed. You can import the certificate into Windows Certificate Manager (certmgr.msc) under Trusted Root. Should you receive a copy of these installers elsewhere, you can verify authenticity.

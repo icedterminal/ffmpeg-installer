@@ -8,7 +8,7 @@
         </Directory>
       </Directory>
     </Directory>
-    <Feature Id="FFmpeg_Full" Title="Core files" Description="Installs all the files needed for FFmpeg Full. This is required." Level="1" AllowAdvertise="no" ConfigurableDirectory="INSTALLLOCATION" Absent="disallow">
+    <Feature Id="FFmpeg_Full" Title="Core files (5.0.1)" Description="Installs all the files needed for FFmpeg Full. This is required." Level="1" AllowAdvertise="no" ConfigurableDirectory="INSTALLLOCATION" Absent="disallow">
       <MergeRef Id="FFmpeg_FullMM"/>
     </Feature>
 	<Feature Id="FFmpeg_path" Title="PATH" Description="Add FFmpeg install location to SYSTEM PATH for easy Terminal use." Level="1" AllowAdvertise="no">
