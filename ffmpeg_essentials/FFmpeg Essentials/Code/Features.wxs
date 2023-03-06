@@ -8,7 +8,7 @@
         </Directory>
       </Directory>
     </Directory>
-    <Feature Id="FFmpeg_Essentials" Title="Core Files (5.1.0)" Description="Installs all the files needed for FFmpeg Essentials. This is required." Level="1" AllowAdvertise="no" ConfigurableDirectory="INSTALLLOCATION" Absent="disallow">
+    <Feature Id="FFmpeg_Essentials" Title="Core Files (6.0.0)" Description="Installs all the files needed for FFmpeg Essentials. This is required." Level="1" AllowAdvertise="no" ConfigurableDirectory="INSTALLLOCATION" Absent="disallow">
       <MergeRef Id="FFmpeg_EssentialsMM"/>
     </Feature>
 	  <Feature Id="FFmpeg_path" Title="PATH" Description="Add FFmpeg install location to SYSTEM PATH for easy Terminal use." Level="1" AllowAdvertise="no">
