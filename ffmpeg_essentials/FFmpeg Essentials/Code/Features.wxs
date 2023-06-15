@@ -1,20 +1,17 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
-  <Fragment>
-    <Directory Id="TARGETDIR" Name="SourceDir">
-      <Directory Id="ProgramFiles64Folder">
-        <Directory Id="INSTALLLOCATION" Name="FFmpeg">
-          <Merge Id="FFmpeg_EssentialsMM" SourceFile="..\FFmpeg EssentialsMM\bin\Release\FFmpeg_EssentialsMM.msm" DiskId="1" Language="1033"/>
-        </Directory>
-      </Directory>
-    </Directory>
-    <Feature Id="FFmpeg_Essentials" Title="Core Files (6.0.0)" Description="Installs all the files needed for FFmpeg Essentials. This is required." Level="1" AllowAdvertise="no" ConfigurableDirectory="INSTALLLOCATION" Absent="disallow">
-      <MergeRef Id="FFmpeg_EssentialsMM"/>
+﻿<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
+  <Fragment><Feature Id="FFmpeg_Essentials" Title="Core Files (6.0.0)" Description="Installs all the files needed for FFmpeg Essentials. This is required." Level="1" AllowAdvertise="no" ConfigurableDirectory="INSTALLLOCATION" AllowAbsent="no">
+      <MergeRef Id="FFmpeg_EssentialsMM" />
     </Feature>
 	  <Feature Id="FFmpeg_path" Title="PATH" Description="Add FFmpeg install location to SYSTEM PATH for easy Terminal use." Level="1" AllowAdvertise="no">
 		  <Component Id="add_to_path" Guid="cda0842e-f774-4aaa-8ab0-7d5147609a15" Directory="TARGETDIR">
 			  <Environment Id="PATH" Name="PATH" Value="[INSTALLLOCATION]bin" Permanent="no" Part="last" Action="set" System="yes" />
 		  </Component>
 	  </Feature>
-  </Fragment>
+  
+      <StandardDirectory Id="ProgramFiles64Folder">
+        <Directory Id="INSTALLLOCATION" Name="FFmpeg">
+          <Merge Id="FFmpeg_EssentialsMM" SourceFile="..\FFmpeg EssentialsMM\bin\Release\FFmpeg_EssentialsMM.msm" DiskId="1" Language="1033" />
+        </Directory>
+      </StandardDirectory>
+    </Fragment>
 </Wix>
