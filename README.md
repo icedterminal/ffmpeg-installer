@@ -19,7 +19,7 @@ Builds from gyan are as follows:
 - _release full_ - built from latest release branch with a large set of libraries
 - _release essentials_ - built from latest release branch with commonly-used libraries
 
-This repo houses installers for *release full* and *release essentials*. I make an effort to keep it updated by checking every 30 days. If there is no updated build, there is no update here. Updates can be as needed (security, critical bugs). If you need more frequent updating, please use gyan's git `.7z` archives.
+This repo houses installers for *release full* and *release essentials*. I make an effort to keep it updated by checking every 30 days. If there is no updated build, there is no update here. Updates can be as needed (security, critical bugs).
 
 Why use an installer?
 
@@ -30,6 +30,10 @@ Why use an installer?
   - From an elevated script `> ffmpeg.msi /qr`
 
 Installer versioning is in format: MAJOR.MINOR.BUILD.YearMonthDay (EX: 4.4.0.20210101).
+
+## Alternative Sources
+If you need more frequent updating, please use gyan's git `.7z` archives direct from the website. These are nightly builds.
+Gyan also publishes the release build to `winget` and the Chocolately community publishes their own build if you prefer command line installation from the archives.
 
 ## Hardware Support
 gyan builds are compiled with hardware acceleration enabled. Supporting the following libraries:
@@ -52,6 +56,3 @@ Issues regarding ffmpeg should be directed elsewhere. Issues are open *only* for
 
 ## Smartscreen
 Windows 8 and later have a SmartScreen feature that blocks software that it doesn't trust. Naturally since it has never seen this software, it may warn you. The installer is safe as is the contained ffmpeg build. If you are unsure, you may cross check the ffmpeg binary with gyans archives (`get-filehash`) or upload to virus total.
-
-## Digital Signature
-As of April 2022, the installers are self-signed. You can import the certificate into Windows Certificate Manager (certmgr.msc) under Trusted Root. Should you receive a copy of these installers elsewhere, you can verify authenticity.
