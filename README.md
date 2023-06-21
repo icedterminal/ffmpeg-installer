@@ -25,15 +25,14 @@ Why use an installer?
 
 - Installs and uninstalls cleanly. Just like manually upacking, this leaves no traces.
 - Automatically adds `ffmpeg` to PATH. No need to add this yourself.
-- Fast and simple.
+- Fast and simple GUI for those not 100% comfortable with command line.
 - Can be used for mass deployment to streamline software installation via scripting.
   - From an elevated script `> ffmpeg.msi /qr`
 
 Installer versioning is in format: MAJOR.MINOR.BUILD.YearMonthDay (EX: 4.4.0.20210101).
 
 ## Alternative Sources
-If you need more frequent updating, please use gyan's git `.7z` archives direct from the website. These are nightly builds.
-Gyan also publishes the release build to `winget` and the Chocolately community publishes their own build if you prefer command line installation from the archives.
+If you need more frequent updating, please use gyan's git `.7z` archives direct from the website. These are nightly builds. Gyan also publishes the release build to `winget` and the Chocolately community publishes their own build if you prefer command line installation from archives.
 
 ## Hardware Support
 gyan builds are compiled with hardware acceleration enabled. Supporting the following libraries:
