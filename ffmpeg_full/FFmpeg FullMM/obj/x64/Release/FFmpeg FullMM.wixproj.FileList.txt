@@ -1,7 +1,2 @@
 C:\Users\icedterminal\GitHub\ffmpeg-installer\ffmpeg_full\FFmpeg FullMM\bin\x64\Release\FFmpeg_FullMM.msm
 C:\Users\icedterminal\GitHub\ffmpeg-installer\ffmpeg_full\FFmpeg FullMM\bin\x64\Release\FFmpeg_FullMM.wixpdb
-obj\x64\Release\FFmpeg_FullMM.wixobj
-obj\x64\Release\FFmpeg_FullMMcustom.wixobj
-obj\x64\Release\FFmpeg FullMM.wixproj.BindContentsFileListnull.txt
-obj\x64\Release\FFmpeg FullMM.wixproj.BindOutputsFileListnull.txt
-obj\x64\Release\FFmpeg FullMM.wixproj.BindBuiltOutputsFileListnull.txt
