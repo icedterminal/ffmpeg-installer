@@ -6,6 +6,9 @@ Ease-of-use binary executable installers for Windows 7 and up (64bit/x64).
 
 The build contained in this installer is obtained from [gyan.](https://www.gyan.dev/ffmpeg/builds/) No tampering or modification has occured. Simply packaged into an installer. Rather than compile my own ffmpeg build I opted to use one that is already available.
 
+> [!NOTE]
+> Windows 8 and later has a "SmartScreen" feature that blocks software that it doesn't trust. Naturally since it has never seen this software, it may warn you. The installer is safe as is the contained ffmpeg build. If you are unsure, you may cross check the ffmpeg binary with gyans archives (`get-filehash`) or upload to virus total. You may need to click "Run anyway" when the warning appears.
+
 gyan makes a few notes regarding these builds:
 
 > [gyan] hosts packages containing binaries of ffmpeg, ffprobe and ffplay. These are compatible with Windows 7 and above. They may work on Windows Vista but that hasn't been tested. If you're downloading ffmpeg to support features in a program such as Krita or Blender, get the release essentials build. All builds are 64-bit.
@@ -52,6 +55,3 @@ Refer to the `README.txt` file for more information.
 
 ## Issue Reporting
 Issues regarding ffmpeg should be directed elsewhere. Issues are open *only* for install and uninstall process.
-
-## Smartscreen
-Windows 8 and later have a SmartScreen feature that blocks software that it doesn't trust. Naturally since it has never seen this software, it may warn you. The installer is safe as is the contained ffmpeg build. If you are unsure, you may cross check the ffmpeg binary with gyans archives (`get-filehash`) or upload to virus total.
