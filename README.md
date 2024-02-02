@@ -1,6 +1,8 @@
 # ffmpeg Install Package
 Ease-of-use binary executable installers for Windows 7 and up (64bit/x64).
 
+[![version](https://img.shields.io/badge/Download-6.1.1-blue)](https://github.com/icedterminal/ffmpeg-installer/releases/latest)
+
 ## About
 `ffmpeg` is an open source command line multimedia framework to encode, decode, transcode, convert etc. a wide array of video formats. [Learn more here.](https://ffmpeg.org/about.html) For use refer to the [official documentation.](https://ffmpeg.org/documentation.html).
 
